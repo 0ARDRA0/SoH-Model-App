@@ -19,4 +19,5 @@ cycle = st.number_input('Cycle')
 if st.button('Predict SOH'):
     features = np.array([[terminal_voltage, terminal_current, temperature, charge_current, charge_voltage, time, capacity, cycle]])
     prediction = model.predict(features)[0]
-    st.write(f"Predicted State of Health: {
+    st.write(f"Predicted State of Health: {predicted_soh}")
+
