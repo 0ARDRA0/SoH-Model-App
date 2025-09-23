@@ -4,7 +4,7 @@ import numpy as np
 
 st.set_page_config(page_title="Battery SoH Predictor", page_icon="🔋", layout="centered")
 
-st.image("battery_banner.png", use_column_width=True)
+st.image("battery_banner.png", use_container_width=True)
 
 st.title("🔋 Battery State of Health (SoH) Predictor")
 
@@ -62,3 +62,4 @@ if st.button('Predict SOH', disabled=not all_valid):
     """)
 
 st.markdown("<br><br>", unsafe_allow_html=True)
+
